@@ -1,7 +1,7 @@
 # Processo Seletivo Simulado - Pessoa Desenvolvedora Frontend - Teste Técnico 👩‍💻👨‍💻
 
 
-⚠️  **ATENÇÃO: Essa descrição é apenas um template. Para replicar realize o fork deste gist!** ⚠️ 
+⚠️  **ATENÇÃO: Essa descrição é apenas um template** ⚠️ 
  
 ## O que preciso saber para fazer o projeto? 🤔
 
@@ -25,9 +25,9 @@ Para isso, você irá replicar a ideia de um sistema que captura as notícias ma
 
 - A pessoa usuária deve ter a informação de quantos dias atrás essa notícia foi publicada
 
-- A pessoa usuária deve conseguir favoritas as notícias que mais gostou
+- A pessoa usuária deve conseguir favoritar as notícias que mais gostou
 
-- A criação de testes é um importante indicador de que as funcionalidades estarão sendo verificadas, como o Mock da API e testes das principais funcionalidades
+- A criação de testes é um importante indicador de que as funcionalidades estão sendo verificadas, como o Mock da API e testes das principais funcionalidades
 
 
 ## Requisitos não funcionais
@@ -36,13 +36,11 @@ Para isso, você irá replicar a ideia de um sistema que captura as notícias ma
 
 - Na raiz do projeto, será necessário incluir um arquivo `README.md` com as instruções para construir/rodar seu projeto localmente. Opcionalmente você pode detalhar as razões pelas escolhas de ferramentas e técnicas aplicadas ao desafio.
 
-- O app deverá se comportar da mesma forma na última versão estável dos seguintes browsers: Chrome, Firefox, Edge
-
 - O app deverá ser responsivo
 
 ## Extras
 
-- Temos insights que nos levam a acreditar que as pessoas usuárias dessa lista costumam ter uma experiência melhor se conseguirem criar filtros nestas notícias. Portanto, existem diversas possibilidades para criar filtros, como por tipo, por favoritas, título, etc.
+- Temos insights que nos levam a acreditar que as pessoas usuárias dessa lista costumam ter uma experiência melhor se conseguirem criar filtros nestas notícias. Portanto, existem diversas possibilidades para criar filtros, como por tipo, favoritas, por título, etc.
 
 - A cobertura de testes com o mínimo de 50% pode trazer resultados positivos para garantir um consistente desenvolvimento das funcionalidades
 
@@ -55,13 +53,6 @@ Para isso, você irá replicar a ideia de um sistema que captura as notícias ma
 ## Entrega
 
 Para realizar a entrega do desafio, você deverá submeter o seu PR para o nosso avaliador
-
-Não se esqueça de criar um arquivo `README.md` contendo as instruções para construir o app localmente
-
-## Feedback
-
-No Promobit, valorizamos muito feedbacks. Acreditamos que o feedback é essencial para melhorar, aprender e facilitar processos. Dessa forma, assim que o seu desafio for submetido, prometemos enviar um feedback técnico em até uma semana usando todos os critérios de avaliação descritos acima.
-
 
 ---
 Obrigado e bom desafio!
