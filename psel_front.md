@@ -50,10 +50,6 @@ Para isso, você irá replicar a ideia de um sistema que captura as notícias ma
 - Domínio das ferramentas e linguagens que compõe um app de frontend moderno
 - Documentação: explicação para construir o app localmente, histórico e workflow de git
 
-## Entrega
-
-Para realizar a entrega do desafio, você deverá submeter o seu PR para o nosso avaliador
-
 ---
 Obrigado e bom desafio!
 
