@@ -29,6 +29,7 @@ Para isso, você irá replicar a ideia de um sistema que captura as notícias ma
 
 - A criação de testes é um importante indicador de que as funcionalidades estão sendo verificadas, como o Mock da API e testes das principais funcionalidades
 
+- A realização do Deploy é um diferencial muito positivo, lembre de enviar o link no readme do seu repositório
 
 ## Requisitos não funcionais
 
