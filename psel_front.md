@@ -1,7 +1,7 @@
 # Processo Seletivo Simulado - Pessoa Desenvolvedora Frontend - Teste Técnico 👩‍💻👨‍💻
 
 
-⚠️  **ATENÇÃO: Essa descrição é apenas um template** ⚠️ 
+⚠️  **ATENÇÃO: Essa descrição é apenas um template, faça o Fork desta GIST** ⚠️ 
  
 ## O que preciso saber para fazer o projeto? 🤔
 
