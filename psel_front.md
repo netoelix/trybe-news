@@ -1,7 +1,17 @@
-# Processo Seletivo Simulado - Pessoa Desenvolvedora Frontend - Teste Técnico 👩‍💻👨‍💻
+# Desafio React: transforme dados em notícias e acelere a sua carreira! - Teste Técnico 👩‍💻👨‍💻
 
 
 ⚠️  **ATENÇÃO: Essa descrição é apenas um template, faça o Fork desta GIST** ⚠️ 
+
+## Como vai funcionar? 🤔
+
+- **Passo 01**: Vocês receberão o desafio para a criação da página. O desafio tem um baixo nível de direcionamento, o que é bem comum em processos seletivos e no mercado de trabalho. Ou seja, essa é uma excelente chance de colocar em prática as suas habilidades e se preparar para desafios técnicos!
+- **Passo 02**: Vocês terão 10 dias para completar o desafio. Como o nosso objetivo é preparar vocês para o mercado, não ofereceremos suporte do time de instrução. Portanto, usem e abusem do StackOverflow, Google e Chat GPT!
+- **Passo 03**: Após a finalização do prazo, cada projeto será avaliado individualmente de forma assíncrona. Vocês terão acesso a todos os feedbacks do nosso time técnico: desde avaliação funcional a sugestões de clean code.
+- **Passo 04**: Todas as pessoas que concluírem os desafios receberão um certificado extra, de participação no desafio. 
+- **Passo 05**: As pessoas autoras dos melhores projetos serão convidadas para uma Live no Youtube da Trybe e serão avaliadas por uma banca. Essas pessoas receberão um certificado de mérito pelo desenvolvimento dos melhores projetos.
+- **Passo 06**: A banca avaliadora escolherá o projeto vencedor e a pessoa autora, além do certificado, ganhará uma certificação da AWS! 
+
  
 ## O que preciso saber para fazer o projeto? 🤔
 
