@@ -60,7 +60,7 @@ Para isso, você irá replicar a ideia de um sistema que captura as notícias ma
 
 ## Envio do seu projeto
 
-- O envio do seu projeto deve ser realizado neste [**forms**](https://docs.google.com/forms/d/e/1FAIpQLSfRqOPKeM7jPoVnMhd_0ZwE8wq6eV63XA5fCMnIQ86gz7-hVw/viewform)
+- O envio do seu projeto deve ser realizado neste [**forms**](https://docs.google.com/forms/d/e/1FAIpQLSfeJTyAJ7hJ0FanhNK_oYiKUk1hXhnWx2ZcaN-gsbxjQDMehw/viewform?usp=sharing)
 - Os dados a serem enviados são seu nome completo, e-mail, URL do repositório com a resolução e feedbacks
 
 ---
