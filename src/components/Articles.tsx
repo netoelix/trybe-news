@@ -1,4 +1,6 @@
 import { useSelector } from 'react-redux';
+import { formatDistanceToNow, parse } from 'date-fns';
+import { ptBR } from 'date-fns/locale';
 
 function Articles({ filter }) {
   const allNews = useSelector((state) => state.allNews);
@@ -30,7 +32,17 @@ function Articles({ filter }) {
             <article key={ id }>
               <h3>{titulo}</h3>
               <p>{introducao}</p>
-              <p>{data_publicacao}</p>
+              <p>
+                Publicado
+                {' '}
+                {
+            formatDistanceToNow(
+              parse(data_publicacao, 'dd/MM/yyyy HH:mm:ss', new Date()),
+              { addSuffix: true, locale: ptBR },
+            )
+}
+
+              </p>
               <a href={ link }>Leia a notícia aqui</a>
             </article>
           );
