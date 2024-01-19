@@ -1,8 +1,10 @@
+import { HeaderContainer } from '../styles/StyleHeader';
+
 function Header() {
   return (
-    <header>
+    <HeaderContainer>
       <h1>TRYBE NEWS</h1>
-    </header>
+    </HeaderContainer>
   );
 }
 export default Header;
