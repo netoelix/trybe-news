@@ -9,7 +9,6 @@ function Articles({ filter }) {
   switch (filter) {
     case 'all':
       data = allNews;
-      console.log(data);
 
       break;
     case 'news':

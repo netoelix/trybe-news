@@ -1,22 +1,22 @@
 import { useSelector } from 'react-redux';
 
 function Section() {
-  // const news = useSelector((state) => state.newsReducer.items);
+  const allNews = useSelector((state) => state.allNews.items);
 
   return (
     <section>
-      {/* {news === undefined ? <h1>carregando</h1>
+      {allNews === undefined ? <h1>carregando</h1>
         : (
           <div>
             <p><span>Notícia mais recente</span></p>
-            <h3>{news[0].titulo}</h3>
-            <p>{news[0].introducao}</p>
-            <p>{news[0].data_publicacao}</p>
-            <a href={ news[0].link } target="_blank" rel="noopener noreferrer">
+            <h3>{allNews[0].titulo}</h3>
+            <p>{allNews[0].introducao}</p>
+            <p>{allNews[0].data_publicacao}</p>
+            <a href={ allNews[0].link } target="_blank" rel="noopener noreferrer">
               Leia a notícia aqui
             </a>
           </div>
-        )} */}
+        )}
     </section>
   );
 }
