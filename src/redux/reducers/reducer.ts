@@ -1,19 +1,28 @@
-type ActionType = {
-  type: string;
-  payload: number;
-};
-
-const initialState = {
-  counter: 0,
-};
-
-const reducers = (state = initialState, action: ActionType) => {
+const allNewsReducer = (state = [], action) => {
   switch (action.type) {
-    case 'OI':
-      return { ...state, counter: state.counter + action.payload };
+    case 'FETCH_ALL_NEWS':
+      return action.payload;
     default:
       return state;
   }
 };
 
-export default reducers;
+const newsReducer = (state = [], action) => {
+  switch (action.type) {
+    case 'FETCH_NEWS':
+      return action.payload;
+    default:
+      return state;
+  }
+};
+
+const releaseReducer = (state = [], action) => {
+  switch (action.type) {
+    case 'FETCH_RELEASE':
+      return action.payload;
+    default:
+      return state;
+  }
+};
+
+export { allNewsReducer, newsReducer, releaseReducer };
