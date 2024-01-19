@@ -1,10 +1,10 @@
 import { composeWithDevTools } from '@redux-devtools/extension';
 import { applyMiddleware, combineReducers, legacy_createStore } from 'redux';
 import thunk from 'redux-thunk';
-import counterReducer from './reducers/counterReducer';
+import reducers from './reducers/reducer';
 
 const reducer = combineReducers({
-  counterReducer,
+  reducers,
 });
 
 const store = legacy_createStore(reducer, composeWithDevTools(applyMiddleware(thunk)));
