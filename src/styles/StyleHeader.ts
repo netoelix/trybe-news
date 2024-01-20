@@ -9,4 +9,5 @@ export const HeaderContainer = styled.header`
   align-content: center;
   justify-content: center;
   align-items: center;
+  height: 100px;
 `;

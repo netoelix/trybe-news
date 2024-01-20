@@ -3,12 +3,31 @@ import { formatDistanceToNow, parse } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
 import { ArticleContainer } from '../styles/StyleArticle';
 
-function Articles({ filter }) {
-  const allNews = useSelector((state) => state.allNews);
-  const news = useSelector((state) => state.news);
-  const release = useSelector((state) => state.release);
+interface ArticlesProps {
+  filter: string;
+}
+type NewsItem = {
+  id: number;
+  titulo: string;
+  introducao: string;
+  data_publicacao: string;
+  link: string;
+  imagens: string;
+};
+type NewsData = NewsItem[];
 
-  let data;
+type State = {
+  allNews: NewsItem[];
+  news: NewsItem[];
+  release: NewsItem[];
+};
+
+function Articles({ filter }: ArticlesProps) {
+  const allNews = useSelector((state:State) => state.allNews);
+  const news = useSelector((state:State) => state.news);
+  const release = useSelector((state:State) => state.release);
+
+  let data: NewsData;
   switch (filter) {
     case 'all':
       data = allNews;
@@ -27,7 +46,9 @@ function Articles({ filter }) {
   return (
     <ArticleContainer>
       {data.length === 0 ? <h1>carregando</h1>
-        : data.items.map(({ id, titulo, introducao, data_publicacao, link }, index) => {
+        : data.items.map((item: NewsItem, index: number) => {
+          // eslint-disable-next-line @typescript-eslint/naming-convention
+          const { id, titulo, introducao, data_publicacao, link } = item;
           if (index === 0) return null;
           return (
             <article key={ id }>

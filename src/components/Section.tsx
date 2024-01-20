@@ -4,7 +4,18 @@ import { ptBR } from 'date-fns/locale';
 import { SectionContainer } from '../styles/StyleSection';
 
 function Section() {
-  const allNews = useSelector((state) => state.allNews.items);
+  type State = {
+    allNews: {
+      items: {
+        titulo: string;
+        introducao: string;
+        data_publicacao: string;
+        link: string;
+      }[];
+    };
+  };
+
+  const allNews = useSelector((state: State) => state.allNews.items);
 
   return (
     <SectionContainer>

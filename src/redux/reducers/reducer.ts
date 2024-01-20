@@ -1,4 +1,4 @@
-const allNewsReducer = (state = [], action) => {
+const allNewsReducer = (state = [], action: any) => {
   switch (action.type) {
     case 'FETCH_ALL_NEWS':
       return action.payload;
@@ -7,7 +7,7 @@ const allNewsReducer = (state = [], action) => {
   }
 };
 
-const newsReducer = (state = [], action) => {
+const newsReducer = (state = [], action: any) => {
   switch (action.type) {
     case 'FETCH_NEWS':
       return action.payload;
@@ -16,7 +16,7 @@ const newsReducer = (state = [], action) => {
   }
 };
 
-const releaseReducer = (state = [], action) => {
+const releaseReducer = (state = [], action: any) => {
   switch (action.type) {
     case 'FETCH_RELEASE':
       return action.payload;
