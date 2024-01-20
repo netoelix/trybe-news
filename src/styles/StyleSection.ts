@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const SectionContainer = styled.section`
-  background-color: #F1F2F3;
-  color: black;
+  color: #2A2A2A;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -17,6 +16,7 @@ export const SectionContainer = styled.section`
         font-size: 14px;
         font-style: normal;
         font-weight: 600;
+        margin-bottom: 5px;
     }
 
     h2 {
@@ -24,6 +24,7 @@ export const SectionContainer = styled.section`
       font-style: normal;
       font-weight: 600;
       text-align: justify;
+      margin-bottom: 20px;
     }
 
     p {
@@ -31,6 +32,7 @@ export const SectionContainer = styled.section`
       font-style: normal;
       font-weight: 400;
       text-align: justify;
+      margin-bottom: 20px;
     }
 
     div {
