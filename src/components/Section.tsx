@@ -2,20 +2,10 @@ import { useSelector } from 'react-redux';
 import { formatDistanceToNow, parse } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
 import { SectionContainer } from '../styles/StyleSection';
+import { StateSection } from '../utils/Types';
 
 function Section() {
-  type State = {
-    allNews: {
-      items: {
-        titulo: string;
-        introducao: string;
-        data_publicacao: string;
-        link: string;
-      }[];
-    };
-  };
-
-  const allNews = useSelector((state: State) => state.allNews.items);
+  const allNews = useSelector((state: StateSection) => state.allNews.items);
 
   return (
     <SectionContainer>
@@ -39,6 +29,9 @@ function Section() {
               <a href={ allNews[0].link } target="_blank" rel="noopener noreferrer">
                 Leia a notícia aqui
               </a>
+            </div>
+            <div>
+              <button>Favoritar</button>
             </div>
           </>
         )}

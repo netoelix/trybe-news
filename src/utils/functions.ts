@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchAllNews, fetchNews, fetchRelease } from '../redux/actions/action';
+import { NewsItem } from './Types';
 
-export const useFetchData = (dataType) => {
+export const useFetchData = (dataType: any) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -21,3 +22,17 @@ export const useFetchData = (dataType) => {
     }
   }, [dispatch, dataType]);
 };
+
+export function handleFavoriteClick(item: NewsItem) {
+  const favorites = JSON.parse(localStorage.getItem('items') || '[]');
+  const index = favorites.findIndex(
+    (favoriteItem: NewsItem) => favoriteItem.id === item.id,
+  );
+
+  if (index !== -1) {
+    favorites.splice(index, 1);
+  } else {
+    favorites.push(item);
+  }
+  localStorage.setItem('items', JSON.stringify(favorites));
+}

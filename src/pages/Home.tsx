@@ -3,7 +3,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Section from '../components/Section';
 import { MainHome } from '../styles/StyleHome';
-import { useFetchData } from '../utils/useFetchNews';
+import { useFetchData } from '../utils/functions';
 
 function Home() {
   useFetchData('all');

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useFetchData } from '../utils/useFetchNews';
+import { useFetchData } from '../utils/functions';
 import Articles from './Articles';
 import { FilterNav } from '../styles/StyleFilters';
 
@@ -34,6 +34,13 @@ function Filters() {
         >
           Notícia
 
+        </button>
+        <button
+          className={ filter === 'favorites'
+            ? 'selected' : 'notselected' }
+          onClick={ () => setFilter('favorites') }
+        >
+          Favoritos
         </button>
       </FilterNav>
       <Articles filter={ filter } />
