@@ -44,7 +44,7 @@ function Articles({ filter }) {
             )
 }
                 </p>
-                <a href={ link }>Leia a notícia aqui</a>
+                <a href={ link } target="_blank" rel="noreferrer">Leia a notícia aqui</a>
               </div>
             </article>
           );

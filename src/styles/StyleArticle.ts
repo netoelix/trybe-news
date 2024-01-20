@@ -66,4 +66,11 @@ export const ArticleContainer = styled.section`
       }
     }
   }
+  @media screen and (max-width: 1000px) {
+    article {
+      width: 300px;
+      height: 380px;
+      margin: 5px;
+    }
+  }
 `;
