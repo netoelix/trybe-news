@@ -65,6 +65,7 @@ export const SectionContainer = styled.section`
   button {
   background-color: transparent;
   border: none;
+  margin-top: 20px;
 
   img {
     width: 23px;

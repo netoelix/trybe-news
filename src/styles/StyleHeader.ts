@@ -11,4 +11,8 @@ export const HeaderContainer = styled.header`
   align-items: center;
   height: 100px;
   font-size: 40px;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 25px;
+  }
 `;
