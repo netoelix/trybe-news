@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux';
 import { formatDistanceToNow, parse } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
+import { ArticleContainer } from '../styles/StyleArticle';
 
 function Articles({ filter }) {
   const allNews = useSelector((state) => state.allNews);
@@ -24,7 +25,7 @@ function Articles({ filter }) {
   }
 
   return (
-    <section>
+    <ArticleContainer>
       {data.length === 0 ? <h1>carregando</h1>
         : data.items.map(({ id, titulo, introducao, data_publicacao, link }, index) => {
           if (index === 0) return null;
@@ -32,22 +33,23 @@ function Articles({ filter }) {
             <article key={ id }>
               <h3>{titulo}</h3>
               <p>{introducao}</p>
-              <p>
-                Publicado
-                {' '}
-                {
+              <div>
+                <p>
+                  Publicado
+                  {' '}
+                  {
             formatDistanceToNow(
               parse(data_publicacao, 'dd/MM/yyyy HH:mm:ss', new Date()),
               { addSuffix: true, locale: ptBR },
             )
 }
-
-              </p>
-              <a href={ link }>Leia a notícia aqui</a>
+                </p>
+                <a href={ link }>Leia a notícia aqui</a>
+              </div>
             </article>
           );
         })}
-    </section>
+    </ArticleContainer>
   );
 }
 
