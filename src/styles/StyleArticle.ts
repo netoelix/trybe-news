@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ArticleContainer = styled.section`
   background-color: #F1F2F3;
-  color: black;
+  color: #2A2A2A;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
