@@ -39,6 +39,7 @@ export const ArticleContainer = styled.section`
       font-weight: 400;
       text-align: justify;
     }
+    
     div {
       display: flex;
       flex-direction: row;
@@ -66,13 +67,16 @@ export const ArticleContainer = styled.section`
       }
     }
   }
+
   button {
     background-color: transparent;
     border: none;
+
     img {
       width: 23px;
     }
   }
+
   @media screen and (max-width: 1000px) {
     article {
       width: 300px;
