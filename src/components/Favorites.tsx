@@ -1,15 +1,28 @@
 import { formatDistanceToNow, parse } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
+import { useEffect, useState } from 'react';
 import { ArticleContainer } from '../styles/StyleArticle';
 import { handleFavoriteClick } from '../utils/functions';
 import { NewsItem } from '../utils/Types';
 
 function Favorites() {
-  const data = JSON.parse(localStorage.getItem('items') || '[]');
+  const [favorites, setFavorites] = useState<NewsItem[]>([]);
+  const [storageChange, setStorageChange] = useState(false);
+
+  useEffect(() => {
+    const data = JSON.parse(localStorage.getItem('items') || '[]');
+    setFavorites(data);
+  }, [storageChange]);
+
+  const handleFavoriteClickWithUpdate = (item: NewsItem) => {
+    handleFavoriteClick(item);
+    setStorageChange(!storageChange);
+  };
+
   return (
     <ArticleContainer>
-      {data.length === 0 ? <h1>Nenhum favorito encontrado</h1>
-        : data.map((item: NewsItem) => {
+      {favorites.length === 0 ? <h1>Nenhum favorito encontrado</h1>
+        : favorites.map((item: NewsItem) => {
         // eslint-disable-next-line @typescript-eslint/naming-convention
           const { id, titulo, introducao, data_publicacao, link } = item;
           return (
@@ -30,7 +43,11 @@ function Favorites() {
                 <a href={ link } target="_blank" rel="noreferrer">Leia a notícia aqui</a>
               </div>
               <div>
-                <button onClick={ () => handleFavoriteClick(item) }>Favoritar</button>
+                <button
+                  onClick={ () => handleFavoriteClickWithUpdate(item) }
+                >
+                  Favoritar
+                </button>
               </div>
             </article>
           );
