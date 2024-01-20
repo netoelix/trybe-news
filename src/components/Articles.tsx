@@ -3,8 +3,8 @@ import { formatDistanceToNow, parse } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
 import { ArticleContainer } from '../styles/StyleArticle';
 import Favorites from './Favorites';
-import { handleFavoriteClick } from '../utils/functions';
 import { ArticlesProps, NewsData, NewsItem, State } from '../utils/Types';
+import Button from './Button';
 
 function Articles({ filter }: ArticlesProps) {
   const allNews = useSelector((state:State) => state.allNews);
@@ -40,6 +40,7 @@ function Articles({ filter }: ArticlesProps) {
         // eslint-disable-next-line @typescript-eslint/naming-convention
           const { id, titulo, introducao, data_publicacao, link } = item;
           if (index === 0) return null;
+
           return (
             <article key={ id }>
               <h3>{titulo}</h3>
@@ -58,7 +59,13 @@ function Articles({ filter }: ArticlesProps) {
                 <a href={ link } target="_blank" rel="noreferrer">Leia a notícia aqui</a>
               </div>
               <div>
-                <button onClick={ () => handleFavoriteClick(item) }>Favoritar</button>
+                <Button
+                  id={ id }
+                  titulo={ titulo }
+                  introducao={ introducao }
+                  data_publicacao={ data_publicacao }
+                  link={ link }
+                />
               </div>
             </article>
           );

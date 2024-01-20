@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 import { ArticleContainer } from '../styles/StyleArticle';
 import { handleFavoriteClick } from '../utils/functions';
 import { NewsItem } from '../utils/Types';
+import iconFavorite from '../assets/Favorite.svg';
+import iconNotFavorite from '../assets/notFavorite.svg';
 
 function Favorites() {
   const [favorites, setFavorites] = useState<NewsItem[]>([]);
@@ -25,6 +27,9 @@ function Favorites() {
         : favorites.map((item: NewsItem) => {
         // eslint-disable-next-line @typescript-eslint/naming-convention
           const { id, titulo, introducao, data_publicacao, link } = item;
+          const isFavorite = favorites.some(
+            (favoriteItem: NewsItem) => favoriteItem.id === item.id,
+          );
           return (
             <article key={ id }>
               <h3>{titulo}</h3>
@@ -46,7 +51,11 @@ function Favorites() {
                 <button
                   onClick={ () => handleFavoriteClickWithUpdate(item) }
                 >
-                  Favoritar
+                  <img
+                    src={ isFavorite ? iconFavorite
+                      : iconNotFavorite }
+                    alt="Favorito"
+                  />
                 </button>
               </div>
             </article>

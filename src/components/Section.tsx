@@ -3,6 +3,7 @@ import { formatDistanceToNow, parse } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
 import { SectionContainer } from '../styles/StyleSection';
 import { StateSection } from '../utils/Types';
+import Button from './Button';
 
 function Section() {
   const allNews = useSelector((state: StateSection) => state.allNews.items);
@@ -31,7 +32,13 @@ function Section() {
               </a>
             </div>
             <div>
-              <button>Favoritar</button>
+              <Button
+                id={ allNews[0].id }
+                titulo={ allNews[0].titulo }
+                introducao={ allNews[0].introducao }
+                data_publicacao={ allNews[0].data_publicacao }
+                link={ allNews[0].link }
+              />
             </div>
           </>
         )}
