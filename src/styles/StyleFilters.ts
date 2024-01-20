@@ -16,6 +16,7 @@ export const FilterNav = styled.nav`
     font-weight: 600;
     padding: 5px;
     margin: 10px;
+    background-color: #F1F2F3;
   }
   .selected {
     border-bottom: 1px solid #C31815;
