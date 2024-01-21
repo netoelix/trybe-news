@@ -52,9 +52,9 @@ function Articles({ filter }: ArticlesProps) {
                   )
                 }
                 </p>
-                <a href={ link } target="_blank" rel="noreferrer">Leia a notícia aqui</a>
               </div>
               <div>
+                <a href={ link } target="_blank" rel="noreferrer">Leia a notícia aqui</a>
                 <Button
                   id={ id }
                   titulo={ titulo }
