@@ -27,11 +27,11 @@ function Section() {
             )
 }
               </p>
+            </div>
+            <div>
               <a href={ allNews[0].link } target="_blank" rel="noopener noreferrer">
                 Leia a notícia aqui
               </a>
-            </div>
-            <div>
               <Button
                 id={ allNews[0].id }
                 titulo={ allNews[0].titulo }

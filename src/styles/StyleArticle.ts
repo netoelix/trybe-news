@@ -45,11 +45,11 @@ export const ArticleContainer = styled.section`
     
     div {
       display: flex;
-      flex-direction: column;
+      flex-direction: row-reverse;
       flex-wrap: wrap;
       align-content: flex-end;
-      justify-content: center;
-      align-items: flex-end;
+      justify-content: flex-start;
+      align-items: center;
       width: 100%;
 
       a {
@@ -67,7 +67,7 @@ export const ArticleContainer = styled.section`
         text-decoration: none;
         font-style: normal;
         font-weight: 700;
-        margin:10px 0px;
+        margin:10px 0px 10px 20px;
       }
     }
   }

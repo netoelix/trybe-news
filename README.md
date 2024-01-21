@@ -28,11 +28,11 @@ Siga os passos abaixo para utilizar a aplicação:
 
 1. **Clone o repositório:**
  ```bash
-   git clone https://github.com/seu-usuario/ibge-news-app.git
+   git clone git@github.com:netoelix/trybe-news.git
 ```
 2. **Acesse o diretório do projeto:**
 ```bash
-   cd ibge-news-app
+   cd trybe-news
 ```
 3. **Instale as dependências:**
 ```bash
@@ -41,6 +41,10 @@ Siga os passos abaixo para utilizar a aplicação:
 4. **Inicie a aplicação:**
 ```bash
    npm run dev
+```
+5. **Para rodar os testes:**
+```bash
+   npm run test
 ```
 
 </details>
@@ -59,3 +63,5 @@ Implementar o salvamento e a renderização das notícias salvas no local storag
 Os testes, especialmente os relacionados ao botão de favoritos, foram desafiadores devido à integração com o local storage e à necessidade de criar mocks para simular as chamadas de API. A utilização da biblioteca Jest e da ferramenta Vitest proporcionou uma cobertura abrangente para garantir a estabilidade da aplicação.
 
 Esperamos que aproveite a experiência de explorar as notícias do IBGE com a nossa aplicação!
+Acesse atráves deste link:
+[Trybe News](https://news-trybe.vercel.app/)
