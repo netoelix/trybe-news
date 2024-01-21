@@ -1,10 +1,14 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
+import { ThunkDispatch } from 'redux-thunk';
+import { AnyAction } from 'redux';
 import { fetchAllNews, fetchNews, fetchRelease } from '../redux/actions/action';
 import { NewsItem } from './Types';
 
 export const useFetchData = (dataType: any) => {
-  const dispatch = useDispatch();
+  const dispatch: ThunkDispatch<any, any, AnyAction> = useDispatch();
+
+  // ...
 
   useEffect(() => {
     switch (dataType) {

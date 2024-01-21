@@ -2,7 +2,7 @@ export interface ArticlesProps {
   filter: string;
 }
 export type NewsItem = {
-  id: number;
+  id: number | undefined;
   titulo: string;
   introducao: string;
   data_publicacao: string;
@@ -23,6 +23,7 @@ export type StateSection = {
       introducao: string;
       data_publicacao: string;
       link: string;
+      id?: number;
     }[];
   };
 };
