@@ -12,7 +12,7 @@ export const ArticleContainer = styled.section`
 
   article {
     width: 350px;
-    height: 350px;
+    height: 370px;
     margin: 20px;
     padding: 20px;
     box-shadow: 0px 2px 14px rgba(42, 42, 42, 0.24);
@@ -38,15 +38,18 @@ export const ArticleContainer = styled.section`
       font-style: normal;
       font-weight: 400;
       text-align: justify;
+      span {
+        font-size: 12px;
+      }
     }
     
     div {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       flex-wrap: wrap;
-      align-content: center;
-      justify-content: space-between;
-      align-items: center;
+      align-content: flex-end;
+      justify-content: center;
+      align-items: flex-end;
       width: 100%;
 
       a {
@@ -64,6 +67,7 @@ export const ArticleContainer = styled.section`
         text-decoration: none;
         font-style: normal;
         font-weight: 700;
+        margin:10px 0px;
       }
     }
   }
@@ -79,7 +83,7 @@ export const ArticleContainer = styled.section`
 
   @media screen and (max-width: 1000px) {
     article {
-      width: 300px;
+      width: 350px;
       height: 380px;
       margin: 5px;
     }

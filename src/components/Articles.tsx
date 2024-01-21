@@ -47,18 +47,18 @@ function Articles({ filter }: ArticlesProps) {
               <p>{introducao}</p>
               <div>
                 <p>
-                  Publicado
-                  {' '}
-                  {
+                  <span>
+                    Publicado
+                    {' '}
+                    {
                   formatDistanceToNow(
                     parse(data_publicacao, 'dd/MM/yyyy HH:mm:ss', new Date()),
                     { addSuffix: true, locale: ptBR },
                   )
-                }
+                  }
+                  </span>
                 </p>
                 <a href={ link } target="_blank" rel="noreferrer">Leia a notícia aqui</a>
-              </div>
-              <div>
                 <Button
                   id={ id }
                   titulo={ titulo }

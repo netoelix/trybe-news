@@ -36,13 +36,13 @@ export const SectionContainer = styled.section`
   }
 
   div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: flex-end;
+      justify-content: center;
+      align-items: flex-end;
+      width: 100%;
 
     a {
       border-radius: 5px;
