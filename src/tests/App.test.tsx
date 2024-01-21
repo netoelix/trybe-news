@@ -30,9 +30,10 @@ const renderWithReduxAndRouter = (component: string | number | boolean | JSX.Ele
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 let mockFetchApi;
 
-const setupFetchMockAndRender = (data, component) => {
+const setupFetchMockAndRender = (data: { items: { id: number; tipo: string; titulo: string; introducao: string; data_publicacao: string; produto_id: number; produtos: string; editorias: string; produtos_relacionados: string; destaque: boolean; link: string; }[] | { id: number; tipo: string; titulo: string; introducao: string; data_publicacao: string; produto_id: number; produtos: string; editorias: string; produtos_relacionados: string; destaque: boolean; link: string; }[] | { id: number; tipo: string; titulo: string; introducao: string; data_publicacao: string; produto_id: number; produtos: string; editorias: string; produtos_relacionados: string; destaque: boolean; link: string; }[]; }, component: string | number | boolean | JSX.Element | Iterable<ReactNode> | null | undefined) => {
   const MOCK_RESPONSE = {
     ok: true,
     status: 200,
