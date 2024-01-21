@@ -23,7 +23,10 @@ function Button(item: NewsItem) {
   };
 
   return (
-    <button onClick={ handleClick }>
+    <button
+      data-testid="favorite-btn"
+      onClick={ handleClick }
+    >
       <img
         src={ isFavorite ? iconFavorite
           : iconNotFavorite }

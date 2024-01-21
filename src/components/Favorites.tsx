@@ -49,6 +49,7 @@ function Favorites() {
               </div>
               <div>
                 <button
+                  data-testid="favorite-btn"
                   onClick={ () => handleFavoriteClickWithUpdate(item) }
                 >
                   <img

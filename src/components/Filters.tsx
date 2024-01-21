@@ -12,6 +12,7 @@ function Filters() {
     <>
       <FilterNav>
         <button
+          data-testid="recent-btn"
           className={ filter === 'all'
             ? 'selected' : 'notselected' }
           onClick={ () => setFilter('all') }
@@ -20,6 +21,7 @@ function Filters() {
 
         </button>
         <button
+          data-testid="release-btn"
           className={ filter === 'release'
             ? 'selected' : 'notselected' }
           onClick={ () => setFilter('release') }
@@ -28,6 +30,7 @@ function Filters() {
 
         </button>
         <button
+          data-testid="news-btn"
           className={ filter === 'news'
             ? 'selected' : 'notselected' }
           onClick={ () => setFilter('news') }
@@ -36,6 +39,7 @@ function Filters() {
 
         </button>
         <button
+          data-testid="favorite-page-btn"
           className={ filter === 'favorites'
             ? 'selected' : 'notselected' }
           onClick={ () => setFilter('favorites') }
