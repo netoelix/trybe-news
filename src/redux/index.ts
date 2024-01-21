@@ -3,7 +3,7 @@ import { applyMiddleware, combineReducers, legacy_createStore } from 'redux';
 import thunk from 'redux-thunk';
 import { allNewsReducer, newsReducer, releaseReducer } from './reducers/reducer';
 
-const reducer = combineReducers({
+export const reducer = combineReducers({
   allNews: allNewsReducer,
   news: newsReducer,
   release: releaseReducer,
