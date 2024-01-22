@@ -4,13 +4,14 @@ import { ptBR } from 'date-fns/locale';
 import { SectionContainer } from '../styles/StyleSection';
 import { StateSection } from '../utils/Types';
 import Button from './Button';
+import LoadingHeader from './LoadingHeader';
 
 function Section() {
   const allNews = useSelector((state: StateSection) => state.allNews.items);
 
   return (
     <SectionContainer>
-      {allNews === undefined ? <h1>carregando</h1>
+      {allNews === undefined ? <LoadingHeader />
         : (
           <>
             <h3><span>Notícia mais recente</span></h3>
