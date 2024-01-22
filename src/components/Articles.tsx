@@ -5,6 +5,7 @@ import { ArticleContainer } from '../styles/StyleArticle';
 import Favorites from './Favorites';
 import { ArticlesProps, State } from '../utils/Types';
 import Button from './Button';
+import Loading from './Loading';
 
 function Articles({ filter }: ArticlesProps) {
   const allNews = useSelector((state:State) => state.allNews);
@@ -31,7 +32,7 @@ function Articles({ filter }: ArticlesProps) {
 
   return (
     <ArticleContainer>
-      {data.length === 0 ? <h1>Carregando</h1>
+      {data.length === 0 ? <Loading />
         : data.items.map((item: any, index: number) => {
         // eslint-disable-next-line @typescript-eslint/naming-convention
           const { id, titulo, introducao, data_publicacao, link } = item;
