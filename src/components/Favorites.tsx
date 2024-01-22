@@ -6,6 +6,7 @@ import { handleFavoriteClick } from '../utils/functions';
 import { NewsItem } from '../utils/Types';
 import iconFavorite from '../assets/Favorite.svg';
 import iconNotFavorite from '../assets/notFavorite.svg';
+import { FavoriteContainer } from '../styles/StyleFavorites';
 
 function Favorites() {
   const [favorites, setFavorites] = useState<NewsItem[]>([]);
@@ -23,7 +24,11 @@ function Favorites() {
 
   return (
     <ArticleContainer>
-      {favorites.length === 0 ? <h1>Nenhum favorito encontrado</h1>
+      {favorites.length === 0
+        ? (
+          <FavoriteContainer>
+            <h1>Nenhum favorito encontrado</h1>
+          </FavoriteContainer>)
         : favorites.map((item: NewsItem) => {
         // eslint-disable-next-line @typescript-eslint/naming-convention
           const { id, titulo, introducao, data_publicacao, link } = item;
